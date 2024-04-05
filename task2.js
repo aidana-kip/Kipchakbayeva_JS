@@ -10,7 +10,6 @@ function checkParentheses(s) {
     if (pairs[char]) {
       arr.push(char);
     } else {
-      // Если это закрывающая скобка
       const last = arr.pop();
       if (pairs[last] !== char) {
         return false;
